@@ -1,0 +1,116 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    background-color: rgba(65, 65, 79, 0.968);
+    color: white;
+}
+
+header {
+    background-color: rgb(238, 208, 169);
+    color: black;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    padding: 15px 30px;
+}
+
+
+header .logo {
+    font-size: 25px;
+    font-weight: bold;
+    align-self: center;
+    margin-right: 30%;
+}
+
+header nav ul {
+    list-style: none;
+    display: flex;
+    gap: 20px;
+}
+
+header nav ul li a {
+    text-decoration: none;
+    color: black;
+    transition: 0.5s;
+    padding: 3px;
+    border-radius: 10px;
+    text-transform: capitalize;
+
+
+}
+
+header nav ul li a:hover,
+header nav ul li a.active {
+    background-color: black;
+    color: rgb(238, 208, 169);
+    border-radius: 12px;
+    transform: scale(1.2);
+    transition: 2s;
+    padding: 5px;
+}
+
+
+.Series h2 {
+    margin-top: 5px;
+    padding: 5px;
+    text-align: center;
+    font-style: italic;
+    font-size: 20px;
+    background-color: black;
+    height: 40px;
+}
+
+.Series h2 span {
+    color: rgb(238, 208, 169);
+}
+.cukur{
+        margin-bottom: 40px;
+
+}
+
+.cukur h2{
+    background-color: rgb(238, 208, 169);
+    color: black;
+    width: 120px;
+    padding: 7px;
+    text-align: center;
+    margin: 10px 0 0 15px;
+    border: solid;
+    border-radius: 5px;
+}
+
+hr {
+    height: 15px;
+    background-color: black;
+    border: solid black;
+}
+
+
+.cukur video {
+    border: 5px solid rgb(0, 0, 0);
+    border-radius: 10px;
+    display: inline-flex;
+    width: 21%;
+    height: 168px;
+    background-color: rgba(24, 24, 34, 0.968);
+    margin: 10px 15px 15px 15px;
+    justify-content: center;
+    transition: 0.5s;
+}
+
+.cukur video:hover {
+    transform: translatey(-5px);
+    box-shadow: 0 4px 5px white;
+}
+
+@media screen and (max-width:700px) {
+    header .logo{
+        margin-bottom: 10%;
+        padding-left: calc(100% / 3);
+    }
+    
+}

@@ -1,0 +1,91 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Contact</title>
+  <link rel="icon" href="../media1.ico" type="image/x-icon">
+  
+<!-- for icon in the end -->
+  <link rel="stylesheet" href="../CSS/all.min.css">
+<!-- for some style in css-->
+  <link rel="stylesheet" href="../bootstrap-5.3.8-dist/css/bootstrap.min.css">
+  <link rel="stylesheet" href="../CSS/Contact.css">
+
+</head>
+
+<body>
+
+  <header>
+    <h1 class="logo">Media pro</h1>
+    <nav>
+      <ul>
+        <li><a href="Home.html" target="_blank">Home</a></li>
+        <li><a href="Movies.html" target="_blank">Movies</a></li>
+        <li><a href="Series.html" target="_blank">Series</a></li>
+        <li><a href="Courses.html" target="_blank">Courses</a></li>
+        <li><a href="Contact.html">Contact</a></li>
+      </ul>
+    </nav>
+  </header>
+
+  <section class="contact">
+    <h2>{ <span>Contact us</span> }</h2>
+  </section>
+
+<!-- info for the user acount & name -->
+  <div class="contact-form">
+    <div style="display: flex; justify-content: space-between; align-items: center;">
+      <h2>Contact us</h2>
+      <button id="btnDetails1" class="btn btn-outline-secondary btn-sm">detalis</button>
+    </div>
+    <form>
+      <input type="text" placeholder="Username" required>
+      <input type="email" placeholder=" Email " required>
+      <textarea placeholder="Message" rows="5" required></textarea>
+      <button type="submit">send</button>
+    </form>
+  </div>
+
+<!-- info for the web developer  -->
+  <div class="contact-info">
+    <div style="display: flex; justify-content: space-between; align-items: center;">
+      <h3>Contact Info</h3>
+      <button id="btnDetails2" class="btn btn-outline-secondary btn-sm">detalis</button>
+    </div>
+    <p><i class="fas fa-phone"></i>770576337 </p>
+    <p><i class="fas fa-envelope"></i>abdulqader@gmail.com </p>
+    <p><i class="fas fa-map-marker-alt"></i>Yemen ( Sana'a ) </p>
+  </div>
+  </div>
+
+<!-- modal in JS -->
+  <div class="modal fade" id="exampleModal" tabindex="-1">
+    <div class="modal-dialog modal-dialog-centered">
+      <div class="modal-content">
+        <div class="modal-header">
+          <h5 class="modal-title">details</h5>
+          <button type="button" class="btn-close" data-bs-dismiss="modal"></button>
+
+        </div>
+        <div class="modal-body" id="modalContent">
+          <!-- بعد ما تظهر الرساله  او ل اعراض نتيجة ال Ajax  -->
+        </div>
+        <div class="modal-footer">
+          <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">close</button>
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <!-- for links  -->
+  <script src="../JS/jquery-3.7.1.min.js"></script>
+  <script src="../bootstrap-5.3.8-dist/js/bootstrap.bundle.min.js"></script>
+  <link rel="stylesheet" href="../CSS/toastr.min.css">
+  <script src="../JS/toastr.min.js"></script>
+  <script src="../JS/modal.js"></script>
+
+</body>
+
+</html>

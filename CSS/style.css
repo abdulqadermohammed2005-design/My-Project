@@ -1,0 +1,114 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  }
+
+body {
+  min-height: 100vh;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  background-color: rgb(236, 216, 190);
+  color: #fff;
+}
+
+.container {
+  display: flex;
+  width: 800px;
+  max-width: 95%;
+  background: white;
+  border-radius: 12px;
+  overflow: hidden;
+  box-shadow: black;
+}
+
+.form-box {
+  flex: 1;
+  padding: 40px;
+  background: #111;
+
+}
+
+.form-box h2 {
+  margin-bottom: 20px;
+  color: white;
+}
+
+.input-box {
+  position: relative;
+  margin-bottom: 20px;
+}
+
+.input-box input {
+  width: 100%;
+  padding: 10px;
+  background: transparent;
+  border: none;
+  border-bottom: 2px solid #555;
+  color: #fff;
+  outline: none;
+  font-size: 16px;
+}
+
+.input-box label {
+  position: absolute;
+  top: 10px;
+  left: 0;
+  color: #aaa;
+  transition: 0.3s;
+}
+
+.input-box input:focus~label,
+.input-box input:valid~label {
+  top: -15px;
+  font-size: 12px;
+  color: rgb(236, 216, 190);
+}
+
+button {
+  width: 100%;
+  padding: 12px;
+  border: none;
+  border-radius: 25px;
+  background-color: rgb(236, 216, 190);
+  color: white;
+  font-size: 16px;
+  cursor: pointer;
+  transition: 0.3s;
+}
+
+button:hover {
+  opacity: 0.8;
+}
+
+#toggle-text {
+  margin-top: 15px;
+  font-size: 14px;
+  color: #ccc;
+}
+
+#toggle-text span {
+  color: rgb(236, 216, 190);
+  cursor: pointer;
+}
+
+#message {
+  margin-top: 10px;
+  font-size: 14px;
+  text-align: center;
+}
+
+.welcome-box {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  color: black;
+  padding: 40px;
+  text-align: center;
+  transform:rotate(270deg);
+ 
+
+
+}

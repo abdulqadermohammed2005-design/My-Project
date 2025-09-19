@@ -1,0 +1,209 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing:border-box ;
+}
+
+body{
+    background-color: rgba(65, 65, 79, 0.968);
+    color: white;
+}
+
+header{
+    background-color: rgb(238, 208, 169);
+    /* background-color: #eee; */
+    color: black;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    /* align-content: space-between; */
+    
+    padding: 15px 30px;
+}
+
+header .logo {
+    font-size: 25px;
+    font-weight: bold;
+    /* padding-left: 300px; */
+    align-self: center;
+    margin-right: 30%;
+}
+
+header nav ul{
+    list-style: none;
+    display: flex;
+    gap: 20px;
+}
+
+header nav ul li a{
+    text-decoration: none;
+    /* background-color:rgba(65, 65, 79, 0.968) ; */
+    color:black;
+    transition: 0.5s;
+    padding: 3px;
+    border-radius: 10px;
+    text-transform: capitalize;
+
+    
+}
+
+header nav ul li a:hover,
+header nav ul li a.active{
+    background-color:black;
+    color:rgb(238, 208, 169);
+    border-radius: 12px;
+    transform:scale(1.2);
+    transition: 0.5s;
+    padding: 5px;
+}
+
+.movies h2{
+    margin-top: 5px;
+    padding: 5px;
+    text-align: center;
+    font-style: italic;
+    font-size: 20px;
+    background-color: black;
+    height: 40px;
+}
+
+.movies h2 span{
+    color: rgb(238, 208, 169);
+}
+
+.contener {
+    padding: 40px 20px;
+    text-align: center;
+    /* display: flex; */
+
+}
+
+.allmov{
+    display: flex;
+    /* justify-content: center;
+    gap: 20px;
+    flex-wrap: wrap;     */
+    animation: scroll 15s linear infinite;
+    width: calc(250px * 5);
+    overflow: hidden;
+
+}
+
+.allmov:hover{
+        animation-play-state: paused;
+}
+
+.film{
+    width: 250px;
+    margin: 15px;
+    border: 2px solid rgb(238, 208, 169);
+    border-radius: 10px;
+    overflow: hidden;
+    transition: 0.3s;
+    
+}
+
+.film:hover{
+    transform: scale(1.05);
+    box-shadow: 0 4px 8px white;
+}
+
+.film img{
+    width: 100%;
+    height: 250px;
+    
+    /* object-fit: cover; */
+    
+}
+
+.film h3{
+    background-color: rgb(238, 208, 169);
+    color: black;
+    padding: 10px;    
+}
+
+.film h3:hover{
+    background-color: black;
+    color: rgb(238, 208, 169);
+    padding: 10px;
+}
+
+.film a{
+    text-decoration: none;
+}
+
+@keyframes scroll {
+    0% {
+      transform: translateX(65%);
+    }
+    100% {
+      transform: translateX(-90%);
+    }
+}  
+
+@media (max-width:768px) {
+    header .logo{
+        margin-bottom: 10%;
+        padding-left: calc(100% / 3);
+    }
+    .contener{
+        display: flex;
+    }
+    .allmov{
+        animation: none;
+        justify-content: center;
+        flex-wrap: wrap;
+    }
+
+     .film{
+        flex:0 5px calc(50% - 20px);
+    } 
+
+    
+}
+
+
+/* 
+@media screen and (max-width:1105px) {
+    .allmov{
+        animation: none;
+    }
+}
+ */
+
+
+/* 
+ @media screen and (max-width:658px) {
+    /* this is for the phone 
+    header .logo{
+        margin-bottom: 10%;
+        padding-left: calc(100% / 3);
+    }
+    .contener{
+        display: flex;
+    }
+
+
+    .allmov{
+        /* display: flex; 
+        /* justify-content: center; 
+        align-content
+        : center;
+      /* gap: 20px
+        flex-wrap: wrap;      
+        flex-direction: column;
+        animation: none;
+       
+        width: calc(100% / 2);
+        overflow: hidden;
+        flex-wrap: wrap;
+    
+    }
+
+    .film{
+        width: 50%;
+        
+        
+    }
+   
+}  */
